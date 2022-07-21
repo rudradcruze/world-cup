@@ -17,6 +17,11 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: 0;
+    background: none;
+}
+
 /* --------------------------------
         Reusable Components 
 -----------------------------------*/
@@ -44,6 +49,7 @@ a {
     -ms-transition: all .4s ease;
     -o-transition: all .4s ease;
     display: inline-block;
+    cursor: pointer;
 }
 
 .btn-white {
@@ -51,6 +57,13 @@ a {
     color: #161616;
 }
 
+.btn-outline {
+    border: 1px solid #161616;
+    font-size: 16px;
+    color: #161616;
+}
+
+.btn-outline:hover,
 .btn-white:hover,
 .btn-primary,
 .btn-active {
@@ -131,25 +144,77 @@ main {
     -o-transition: all .4s ease;
 }
 
-
-
 /* --------------------------------
         Blog Section Start 
 -----------------------------------*/
+
+.blog-wrapper {
+    display: flex;
+    gap: 24px;
+}
+
 .blog-wrapper aside.blog-menu {
-	display: flex;
-	flex-direction: column;
-	width: 312px;
-	background: #161616;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-	padding: 30px;
-	gap: 30px;
+    display: flex;
+    width: 390px;
+    height: 250px;
+    background: #161616;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 30px;
+    gap: 30px;
+    text-align: center;
+    flex-direction: column;
 }
 
 .blog-wrapper .btn {
     padding: 20px 30px;
+}
+
+.blog-articles-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+article.blog-articles-items {
+    border: 1px solid #E8E8E8;
+}
+
+article.blog-articles-items img {
+    width: 100%;
+}
+
+article.blog-articles-items .btn {
+    padding: 5px 16px;
+    margin-bottom: 15px;
+}
+
+.blog-articles-items-info {
+    padding: 20px;
+}
+
+article.blog-articles-items h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616;
+}
+
+article.blog-articles-items .blog-timing  {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+article.blog-articles-items .blog-timing .time {
+    padding-right: 20px;
+}
+
+article.blog-articles-items .blog-timing i {
+    color: rgba(22, 22, 22, 0.8);
+    padding-right: 5px;
 }
