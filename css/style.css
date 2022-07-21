@@ -148,9 +148,14 @@ main {
         Blog Section Start 
 -----------------------------------*/
 
+#blog .container {
+    text-align: center;
+}
+
 .blog-wrapper {
     display: flex;
     gap: 24px;
+    text-align: left;
 }
 
 .blog-wrapper aside.blog-menu {
@@ -217,4 +222,13 @@ article.blog-articles-items .blog-timing .time {
 article.blog-articles-items .blog-timing i {
     color: rgba(22, 22, 22, 0.8);
     padding-right: 5px;
+}
+
+#blog .view-all {
+    margin-top: 30px;
+    padding: 12px 30px;
+}
+
+#blog .view-all:hover {
+    padding: 12px 40px;
 }
