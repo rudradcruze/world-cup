@@ -22,6 +22,10 @@ button {
     background: none;
 }
 
+ul li {
+    list-style-type: none;
+}
+
 /* --------------------------------
         Reusable Components 
 -----------------------------------*/
@@ -227,8 +231,80 @@ article.blog-articles-items .blog-timing i {
 #blog .view-all {
     margin-top: 30px;
     padding: 12px 30px;
+    display: none;
 }
 
 #blog .view-all:hover {
     padding: 12px 40px;
+}
+
+/* --------------------------------
+        Footer Section Start 
+-----------------------------------*/
+
+footer#footer {
+    margin-top: 130px;
+    padding: 130px;
+    background: #161616;
+    text-align: center;
+}
+
+footer#footer .footer-text h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+footer#footer .footer-menu a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #B9B9B9;
+    padding: 0 10px;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+
+footer#footer .footer-menu a:hover {
+    color: #DD0000;
+}
+
+footer#footer .footer-social-media ul li {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+footer#footer .footer-social-media ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #E8E8E8;
+    color: #161616;
+    line-height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 20px;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+
+footer#footer .footer-social-media ul li a:hover {
+    background: #DD0000;
+    color: #E8E8E8;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
